@@ -275,10 +275,36 @@ let militaryUnit = {
 const Mission1 = (militaryUnit) => {
     const chiefOfStaff = militaryUnit.commandStructure.chiefOfStaff;
     const res = `name: ${chiefOfStaff.name}, rank: ${chiefOfStaff.rank}, phon number: ${chiefOfStaff.contact.phone}`;
-    return res
+    return res;
 }
 
 
 const Mission2 = (militaryUnit) => {
     return String((militaryUnit.personnel).length);
 }
+
+const Mission3 = (NewDeployment, militaryUnit) => {
+    const currentDeployment = militaryUnit.currentDeployment;    
+    const toHistory = {eventDate: currentDeployment.estimatedEndDate, eventDescription: currentDeployment.mission}
+    militaryUnit.history.push(toHistory);
+
+    currentDeployment.location = NewDeployment.location;
+    currentDeployment.mission = NewDeployment.mission;
+    currentDeployment.startDate = NewDeployment.startDate;
+    currentDeployment.estimatedEndDate = NewDeployment.estimatedEndDate;
+    return militaryUnit;
+}
+
+const newDploy = {
+    location: "8888888888",
+  
+      mission: "8888888888",
+  
+      startDate: "888888888888888",
+  
+      estimatedEndDate: "888888888888888",
+}
+
+Mission3(newDploy, militaryUnit);
+// const newStudents = students.map((s) => {return {name: s.fullName, paid: s.isPaid}})
+// const newStudents1 = students.map(function(s){return{...s, fullName:"Mr. "+s.fullName}})
