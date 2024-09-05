@@ -1,0 +1,84 @@
+body{
+    height: 100vh;
+}
+
+#top-div{
+    height: 7vh;
+    background-color: green;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+#nav-bar{
+    height: 20px;
+    background-color: rgb(1, 66, 1);
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#main{
+    background-color: rgba(139, 136, 136, 0.426);
+    /* height: 88vh; */
+    height: 100vh;
+}
+
+#bottem-div{
+    height: 4vh;
+    background-color: green;
+    position: sticky;
+    bottom: 0;
+}
+
+#welcome-div{
+    height: 70px;
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: small;
+    top: 10px;
+    position: relative;
+}
+
+#ditailes-header{
+    height: 80px;
+    background-color: rgb(41, 94, 140);
+    margin: 10px;
+    border-radius: 10px;
+    font-size: small;
+    top: 10px;
+    position: relative;
+}
+
+#ditails{
+    height: 800px;
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: small;
+    top: 10px;
+    position: relative;
+}
+
+#links{
+    height: 60px;
+    width: 400px;
+    background-color: red;
+    margin: auto;
+}
+
+h1{
+    /* margin: 0;
+    padding: 0 */
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
