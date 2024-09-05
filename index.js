@@ -278,3 +278,7 @@ const Mission1 = (militaryUnit) => {
     return res
 }
 
+
+const Mission2 = (militaryUnit) => {
+    return String((militaryUnit.personnel).length);
+}
