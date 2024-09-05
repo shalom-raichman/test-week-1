@@ -1,14 +1,21 @@
 body{
-    height: 100vh;
+    /* height: 100%;
+    width: 100%;
+    position: fixed; */
+    /* background-color: gray; */
+}
+
+body * {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 #top-div{
-    height: 7vh;
+    width: 100%;
     background-color: green;
     position: sticky;
+    display: inline-flex;
     top: 0;
     text-align: center;
-    display: flex;
     flex-direction: column;
     color: aliceblue;
 }
@@ -26,7 +33,9 @@ body{
 #main{
     background-color: rgba(139, 136, 136, 0.426);
     /* height: 88vh; */
-    height: 100vh;
+    /* height: 100%; */
+    /* position: relative; */
+    padding: 5px;
 }
 
 #bottem-div{
@@ -34,22 +43,37 @@ body{
     background-color: green;
     position: sticky;
     bottom: 0;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #welcome-div{
-    height: 70px;
+    height: 80px;
     background-color: aliceblue;
     margin: 10px;
     border-radius: 10px;
     font-size: small;
     top: 10px;
-    position: relative;
+    /* position: relative; */
+
+}
+
+#Training-Details{
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: small;
+    top: 10px;
 }
 
 #ditailes-header{
     height: 80px;
-    background-color: rgb(41, 94, 140);
+    /* background-color: rgb(41, 94, 140); */
     margin: 10px;
+    margin-bottom: 30px;
     border-radius: 10px;
     font-size: small;
     top: 10px;
@@ -63,22 +87,57 @@ body{
     border-radius: 10px;
     font-size: small;
     top: 10px;
-    position: relative;
+
 }
 
 #links{
-    height: 60px;
-    width: 400px;
-    background-color: red;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-h1{
-    /* margin: 0;
-    padding: 0 */
+.link-div{
+    height: 80px;
+    width: 400px;
+    background-color: rgba(169, 163, 163, 0.585);
+    border-radius: 10px;
 }
 
-h2{
-    margin: 0;
-    padding: 0;
+.link-div:hover{
+    background-color: rgb(236, 222, 222);
+}
+
+h4, h5, h2, p{
+    margin: 10px;
+    padding: 10px;
+}
+
+.to-bol{
+    font-weight: 1000;
+
+}
+
+#sign-up-h{
+    color: rgb(1, 85, 1);
+}
+
+#my-input *{
+    width: 95%;
+    margin: 10px;
+}
+
+label{
+    margin: 10px;
+}
+
+#Gender{
+}
+
+#sign-up{
+    background-color: green;
+    color: aliceblue;
 }

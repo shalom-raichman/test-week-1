@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Army Training Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="top-div">
+      <div id="nav-bar">
+        <p>Home</p>
+        <p>Back to Schedule</p>
+      </div>
+      <h1>survival Skills - Wilderness</h1>
+    </div>
+    <div id="main">
+      <div id="Training-Details">
+        <h2>Training Details</h2>
+        <p><span class="to-bol">Date: </span>2024-09-05</p>
+        <p><span class="to-bol">Instructor: </span>Sgt. Davis</p>
+        <p>
+          <span class="to-bol">Description: </span> Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Dicta voluptates, aperiam hic odio iure
+          natus. Consects! Quae, repellendus.
+        </p>
+        <p><span class="to-bol">Equipment: </span>survival kit, map, compes</p>
+      </div>
+      <div id="sign-up-h">
+        <h2>Sign Up for survival Skills</h2>
+      </div>
+
+      <form id="ditails">
+        <div id="ditailes-header">
+          <h2>Upcoming Training Schedule</h2>
+        </div>
+
+        <div id="my-input">
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" /> <br />
+
+          <label for="last-name">Last name</label>
+          <input type="text" name="last-name" /><br />
+
+          <label for="ID-Number">ID Number</label>
+          <input type="number" name="ID-Number" /><br />
+
+          <label for="Rank">Rank</label><br />
+          <select name="Rank">
+            <option value="רב אלוף">רב אלוף</option>
+            <option value="רב אלוף">אלוף</option>
+            <option value="רב אלוף">סגן אלוף</option>
+            <option value="רב אלוף">אלוף משנה</option>
+          </select>
+        </div>
+        <div id="gender">
+          <label for="Gender">Gender</label>
+          <br />
+          <br />
+          <label>
+            Maile
+            <input type="radio" name="Gender" value="Male" /><br />
+          </label>
+          <label>
+            Female
+            <input type="radio" name="Gender" value="Female" /><br />
+          </label>
+        </div>
+        <br />
+        <label for="sub-btn"></label>
+        <input id="sign-up" type="submit" name="sub-btn" value="Sign Up" />
+      </form>
+    </div>
+
+    <div id="bottem-div">@ 2024 Army Portal. all rigts reserved</div>
+    <script src="index.js"></script>
+  </body>
+</html>
