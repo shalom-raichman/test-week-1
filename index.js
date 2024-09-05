@@ -295,16 +295,37 @@ const Mission3 = (NewDeployment, militaryUnit) => {
     return militaryUnit;
 }
 
-const newDploy = {
-    location: "8888888888",
-  
-      mission: "8888888888",
-  
-      startDate: "888888888888888",
-  
-      estimatedEndDate: "888888888888888",
+const Mission4 = (firearm, militaryUnit) => {
+    const firearms = militaryUnit.equipment.firearms;
+    let toAdd = true;
+    let addQun = true;
+    for (const el of firearms) {
+        if (el.type == firearm.type){
+            toAdd = false;
+        }
+        if (el.status == firearm.status)
+        {
+            toAdd = false;
+        }
+
+        if (toAdd){
+            
+        }
+    }
+    if (toAdd){
+        firearm.push(firearm);
+    }else {
+        firearms.
+    }
 }
 
-Mission3(newDploy, militaryUnit);
-// const newStudents = students.map((s) => {return {name: s.fullName, paid: s.isPaid}})
-// const newStudents1 = students.map(function(s){return{...s, fullName:"Mr. "+s.fullName}})
+
+const firearms = {
+  
+    type: "M16 Rifle",
+
+    quantity: 500,
+
+    status: "Operational",
+
+  };
