@@ -311,3 +311,19 @@ const Mission4 = (firearm, militaryUnit) => {
 }
 
 
+const Mission5 = (militaryUnit)=> {
+    const training = militaryUnit.trainingPrograms;
+    let res = 0;
+    for (const element of training) {
+        res += element.duration;
+    }
+    return String(res);
+}
+
+
+module.exports = {
+    Mission1,
+    Mission2,
+    Mission3,
+    Mission4
+}
