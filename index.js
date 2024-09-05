@@ -297,35 +297,17 @@ const Mission3 = (NewDeployment, militaryUnit) => {
 
 const Mission4 = (firearm, militaryUnit) => {
     const firearms = militaryUnit.equipment.firearms;
-    let toAdd = true;
-    let addQun = true;
     for (const el of firearms) {
-        if (el.type == firearm.type){
-            toAdd = false;
-        }
-        if (el.status == firearm.status)
+        if(el.type == firearm.type && el.status == firearm.status)
         {
-            toAdd = false;
-        }
-
-        if (toAdd){
-            
+            el.quantity += firearm.quantity;
+            break;
+        } else{
+            firearms.push(firearm);
+            break;
         }
     }
-    if (toAdd){
-        firearm.push(firearm);
-    }else {
-        firearms.
-    }
+    return militaryUnit.equipment;
 }
 
 
-const firearms = {
-  
-    type: "M16 Rifle",
-
-    quantity: 500,
-
-    status: "Operational",
-
-  };
